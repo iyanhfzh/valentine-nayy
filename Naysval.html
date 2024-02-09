@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+  Code Made By Deka Tutorial
+  Youtube: Deka Tutorial
+  Tiktok: @deka_tutorial
+  -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    div {
+      width: 120px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  <title>Buat Naya &#129505</title>
+</head>
+
+<body style="text-align: center">
+  <img src="naya.jpg" alt="Ini kenapa gambarnya ga keluar woy" style="height: 280px" />
+  <h1>Haloo Nayaa!!! Happy Valentine's Day</h1>
+  <h2>Do You Love Me?</h2>
+  <div>
+    <button onclick="mau()">Yes</button>
+    <button onmouseover="gak(this)">Nooo</button>
+  </div>
+  <script>
+    function mau() {
+      alert("I Love You Too");
+      alert("Akhirnya terbalas juga 'Iloveu' gw");
+      alert("Kirim jawabannya ke WA gw ya");
+
+      location.assign("https://wa.me/send/?phone=6281381516961&text=I%20LOVE%20U%20TOO");
+    }
+    function gak(ini) {
+      ini.style.position = "absolute";
+      ini.style.left = `${Math.floor(Math.random() * 90)}%`;
+      ini.style.top = `${Math.floor(Math.random() * 90)}%`;
+    }
+  </script>
+</body>
+
+</html>
